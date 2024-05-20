@@ -1,0 +1,17 @@
+{
+    "name": "Ad-Blockich",
+    "version": "1.0.0",
+    "description": "This is a simple Ad-block app",
+    "permissions": ["scripting", "activeTab"],
+    "manifest_version": 3,
+    "author": "Mikhail Il'in",
+    "content_scripts": [
+        {
+            "js":["app.js"],
+            "matches": ["*://*/*"]
+        }
+    ],
+    "action": {
+        "default_title": "Ad-Blockich"
+    }
+}
